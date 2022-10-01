@@ -4,7 +4,7 @@ header {
 	width: 100vw;
 }
 .bg-dark{
-    background-color: rgba(243, 243, 243, 0.914) !important;
+    background-color: rgba(55, 13, 52, 0.914) !important;
  
 }
 .bg-dark.nav-link {
@@ -15,6 +15,14 @@ header {
 	font-size: 2em;
 	font-weight: 800;
 	text-transform: uppercase;
+}
+.border-active{
+	border-width: 10px;
+	border-color: rgb(156, 76, 231);
+}
+.border-inactive{
+	border: none;
+	
 }
 
 .nav-item {
@@ -37,4 +45,12 @@ header {
 }
 .navbar-collapse{
 	padding-top: 10px;
+}
+.color-bg{
+	background-color: black;
+	color: aliceblue;
+}
+.color-item{
+	border-radius: 10px;
+    color: rgb(247, 238, 238);
 }

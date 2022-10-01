@@ -1,0 +1,24 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    border-width: 2px;
+    color: rgb(142, 7, 137);
+    right: 15px;
+    
+    opacity: 0;
+    transition: all .2s ease-in-out;
+   }
+   .show-scrollTop {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+   }
+   .scroll-to-top:hover{
+    background-color: rgb(108, 5, 103);
+    border-radius: 5px;
+   }
+
+   button, i{
+    border-width: 2px;
+    color: rgb(142, 7, 137);
+    border-color: rgb(230, 8, 193);
+   }

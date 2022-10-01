@@ -17,11 +17,12 @@
 	border: 2px solid black;
 }
 
-.btn1:hover {
-	background-color: white;
+
+.btn-dark:hover{
+    border-width: 1px;
 	color: black;
-	border: 2px solid black;
-	text-decoration: none;
+	background-color: #ffffff;
+    border-color: rgb(146, 9, 91);
 }
 .card{
     color: black;

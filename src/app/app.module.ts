@@ -11,6 +11,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     BlogComponent,
     ContactComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ScrollToTopComponent
   ],
   imports: [
     BrowserModule,
