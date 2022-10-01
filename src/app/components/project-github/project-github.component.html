@@ -1,0 +1,28 @@
+<section id="project-github" class="hero bg-dark d-flex flex-column justify-content-center">
+  
+    <div class="text-white text-center bg-dark">
+        <div class= " text-center pt-5">
+            <h3>Proyectos públicos en Github!</h3>
+            
+        </div>
+      
+        <div  class="row row-cols-1 bg-dark row-cols-md-3 p-5 g-4">
+
+            <div *ngFor="let project of project_list " class="bg-dark" style="max-width: 540px;">
+
+                <div class="alert text-white" role="alert">
+                    <h4 class="alert-heading color-h4"><i class="fa-brands fa-git-alt"></i>{{project.name}}</h4>
+                    <p>{{project.description}}</p>
+                    <div class="card-footer">
+                        <small class="text-muted">{{project.language}}</small>
+                      </div>
+                    <hr>
+                    <a target="_blank" [href]="project.html_url" class="btn btn-dark">Ver Proyecto</a>
+                </div>
+
+            </div>
+
+          
+        </div>
+    </div>
+</section>
