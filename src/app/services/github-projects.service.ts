@@ -9,12 +9,17 @@ export class GithubProjectsService {
 
   constructor(private http: HttpClient) { }
 
-  url= 'https://api.github.com/users/darwing99/repos';
-  //https://api.github.com/users/darwing99
+  base="https://api.github.com/users/darwing99";
+  url= this.base+'/repos';
+  
 
   getProject():Observable<any>{
     
      const URL=this.url;
      return this.http.get(URL);
+  }
+  getUser():Observable<any>{
+    const URL=this.base;
+    return this.http.get(URL);
   }
 }

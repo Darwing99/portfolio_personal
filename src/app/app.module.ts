@@ -12,6 +12,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
+import { AppRoutingModule } from './app-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.c
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     HttpClientModule
   ],
   providers: [],

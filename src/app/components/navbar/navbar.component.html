@@ -1,51 +1,54 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top" [ngClass]="windowScrolled ? '  bg-dark text-white ':'navbar-white text-black'">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Toggle button -->
-      <button
-      class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-  
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Navbar brand -->
-        <a class="navbar-brand mt-0 p-0 mt-lg-0"  href="#home">
-          <img 
-            src="https://raw.githubusercontent.com/Darwing99/Darwing99/9d28d4a5975f0c0cfd1ad939297f42d2bcc2a421/logonav.svg"
-            height="60"   alt="DRCODE"
-            loading="lazy"
-          />
-        </a>
-        <!-- Left links -->
-        <ul  class="d-flex navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item" >
-            <a class="nav-link"  [ngClass]="windowScrolled ? 'text-white' :'text-black'"  href="#home"><strong>Inicio</strong> </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [ngClass]="windowScrolled ? 'text-white' :'text-black'" href="#sobre_mi"><strong>Sobre mí</strong> </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [ngClass]="windowScrolled ? 'text-white' :'text-black'" href="#project-github"><strong>Proyectos Github</strong> </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [ngClass]="windowScrolled ? 'text-white' :'text-black'" href="#worksandskill"><strong>Proyectos</strong> </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [ngClass]="windowScrolled ? 'text-white' :'text-black'" target="_blank" href="https://dev.to/darwing99"><strong>blog</strong></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [ngClass]="windowScrolled ? 'text-white' :'text-black'" href="#contact"><strong>Contacto</strong></a>
-          </li>
-        </ul>
-        <!-- Left links -->
-      </div>
-      <!-- Collapsible wrapper -->
-  
-     
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top"
+  [ngClass]="windowScrolled ? '  bg-dark text-white ':'bg-white text-black'">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-0 p-0 mt-lg-0" [routerLink]="['/']"
+     >
+        <img
+          src="https://raw.githubusercontent.com/Darwing99/Darwing99/55085f215e2b0d5ab53b98c818ebc7f38a3b509b/logonav.svg"
+          height="60" alt="DRCODE" loading="lazy" />
+      </a>
+      <!-- Left links -->
+      <ul class="d-flex navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="windowScrolled ? 'text-white' :'text-black'"  [routerLink]="['/']"     ><strong>Inicio</strong> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="windowScrolled ? 'text-white' :'text-black'" href="#sobre_mi"><strong>Sobre
+              mí</strong> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="windowScrolled ? 'text-white' :'text-black'"
+            href="#project-github"><strong>Proyectos Github</strong> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="windowScrolled ? 'text-white' :'text-black'"
+            href="#worksandskill"><strong>Proyectos</strong> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="windowScrolled ? 'text-white' :'text-black'" [routerLink]="['blog']"><strong>blog</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="windowScrolled ? 'text-white' :'text-black'"
+            href="#contact"><strong>Contacto</strong></a>
+        </li>
+      </ul>
+      <!-- Left links -->
     </div>
-    <!-- Container wrapper -->
-  </nav>
-  <!-- Navbar -->
+    <!-- Collapsible wrapper -->
+
+
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->

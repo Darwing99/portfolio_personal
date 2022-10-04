@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubProjectsService } from 'src/app/services/github-projects.service';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  userdata?: any = [];
+  constructor(private user: GithubProjectsService) { }
 
   ngOnInit(): void {
+    this.getUser();
   }
+  getUser() {
+    this.user.getUser().subscribe((data: any) => {
 
+      this.userdata = data;
+    });
+
+}
 }

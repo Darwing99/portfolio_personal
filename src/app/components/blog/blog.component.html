@@ -1,1 +1,54 @@
-<p>blog works!</p>
+<div id="blog" class="pt-5 py-5 bg-color border-bottom" >
+    <div class= " text-center pt-5">
+        <h3>Articulos Publicados!</h3>
+        
+    </div>
+    <section class="hero d-flex flex-column justify-content-center"  >
+      <div id="hero-area">
+       <div class="container">
+         <div class="row">
+           <div class="col-md-12 text-center">
+             <div class="block wow fadeInUp" data-wow-delay=".3s">
+     
+               
+               <section class="cd-intro">
+                 <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s">
+                  <a target="_blank" href="https://dev.to/darwing99"
+                  class="btn-dark">Ver mas</a>
+             
+                 </h1>
+               </section> 
+             
+              
+             
+             </div>
+           </div>
+         </div>
+       </div>
+   </div>
+   </section>
+    <div class="row row-cols-1 row-cols-md-4 p-5 g-4">
+   
+        <div  *ngFor="let articulo of articles" class="col">
+      
+            <div class="bg-image hover-overlay ripple card h-50">
+                <img [src]="articulo.cover_image!=null? articulo.cover_image:'https://images.pexels.com/photos/4559592/pexels-photo-4559592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'" class="img-fluid" [alt]="articulo.title"/>
+               
+                <div class="card-body">
+                  <h5 class="card-title">{{articulo.title}}</h5>
+                  <p class="card-text">
+                   {{articulo.description}}
+                  </p>
+                  <a target="_blank" [href]="articulo.url" class="btn btn-dark">Ver mas</a>
+               
+                </div>
+                <div class="card-footer">
+                  <small class="text-dark">{{articulo.published_timestamp}}</small>
+
+                </div>
+               
+              </div>
+        </div>
+ 
+      </div>
+    </div>

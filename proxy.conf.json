@@ -1,0 +1,7 @@
+{
+    "/api/*":{
+        "target":"https://dev.to",
+        "secure":false,
+        "changeOrigin":true
+    }
+}

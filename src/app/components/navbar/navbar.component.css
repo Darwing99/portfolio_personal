@@ -3,13 +3,15 @@ header {
 	z-index: 10;
 	width: 100vw;
 }
+.bg-white{
+	color: rgb(243, 243, 243,0.904);
+}
 .bg-dark{
-    background-color: rgba(55, 13, 52, 0.914) !important;
+    background-color: rgba(0, 0, 0, 0.904) !important;
  
 }
 .bg-dark.nav-link {
-    opacity: 20%;
-    color: rgb(243, 243, 243);
+    color: rgb(243, 243, 243,0.904);
 }
 .navbar-brand {
 	font-size: 2em;
@@ -26,22 +28,23 @@ header {
 }
 
 .nav-item {
-    border-radius: 5px;
+   
 	font-weight: 500;
 	text-transform: uppercase;
     color: rgb(67, 11, 104) !important;
 }
 .nav-link{
-    border-radius: 10px;
     color: rgb(0, 0, 0);
+	padding: 1rem;
 }
+
 .nav-item .nav-link:hover {
-    border-radius: 5px;
-	background-color: black;
-	color: rgb(227, 227, 227) !important;
+    border-width: 2px;
+	border-color: blueviolet;
+	color: rgb(126, 11, 109) !important;
 }
 .navbar-toggler{
-	color:rgb(109, 4, 133) ;
+	color:rgb(103, 91, 91) ;
 }
 .navbar-collapse{
 	padding-top: 10px;
